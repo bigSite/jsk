@@ -1,0 +1,233 @@
+/*Global*/
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Poiret One', cursive;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.row{
+	margin-top: 30px;
+}
+
+.row-no-TopMargin{
+	margin-top:0 !important;
+}
+
+.margin-top{
+	margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+	.margin-top{
+		margin-top:0;
+	}
+}
+
+.white-text{
+	color: white;
+}
+
+.center-text{
+	text-align:center;
+}
+
+.after-line:after{
+	content: " ";
+	display: block;
+	width: 100%;
+	height:1px;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin-top:30px;
+	margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px ) {
+	.after-line:after{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+}
+
+.container{
+	padding-top: 30px;
+	padding-bottom: 120px;
+}
+
+.btn-primary{
+	background: transparent;
+	border: solid 1px #444444;
+	border-radius: 8px;
+	color: #444444;
+	padding: 10px;
+	transition: 0.3s;
+}
+
+.btn-primary:hover{
+	color:white;
+	background: #444444;
+}
+
+.img-width-100per{
+	width:100%;
+}
+
+.img-height-100px{
+	height: 100px;
+}
+
+.img-height-100per{
+	height: 100%;
+}
+
+.cover{
+	object-fit: cover;
+	object-position: center;
+}
+
+/*Slider*/
+
+.controllers{
+	justify-content: space-between;
+	position:absolute;
+	top:50%;
+	width: 100%;
+	z-index: 99;
+}
+
+.controller i{
+	cursor: pointer;
+	color:white;
+	font-weight: 100;
+}
+
+#next i {
+	float:right;
+}
+
+#prev i{
+	float:left;
+}
+
+@media screen and (min-width: 800px){
+	.slick-dots li button:before{
+	font-size:18px;
+	}
+
+	.controllers-dots{
+		padding-left: 20%;
+	}
+}
+
+@media screen and (min-width: 460px){
+	.controllers-dots{
+	display:block !important;
+	}
+}
+
+.controllers-dots{
+	position: absolute;
+	display:none;
+	bottom: 60px;
+	width: 100%;
+	z-index: 999;
+}
+
+.slick-dots li{
+	float:left;
+}
+
+.slick-dots li.slick-active button:before{
+	opacity: 1;
+	color: white;
+}
+
+.slick-dots li button:before{
+	color: white;
+	opacity:60%;
+}
+
+.slick-dots{
+	position: relative;
+}
+
+
+.slider{
+	max-width: 100vw;
+	position: relative;
+}
+
+.slider-bg{
+	height: 100vh;
+	position: relative;
+	background-position: center;
+}
+
+
+.slider-title{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+	height: 100px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 15%;
+	display:flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: flex-end; /* Horizontal center alignment */
+}
+
+.slider-title h2{
+	font-size: 46px;
+}
+
+/*Blurby*/
+.blurb{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 45px;
+}
+
+@media (min-width: 768px) {
+	.blurb{
+		margin-top: 90px;
+	}
+}
+
+.blurb-text{
+	padding: 20px 0;
+}
+
+/*About*/
+
+.about{
+	padding-top: 100px;
+}
+
+/*Listy*/
+
+.no-style{
+	list-style: none;
+	padding-left: 0;
+}
+
+.no-style li{
+	margin: 15px 0;
+}
+
+/*Footer*/
+
+footer{
+	border-top: solid 1px rgba(0, 0, 0, 0.1);
+	padding-bottom: 0 !important;
+}
