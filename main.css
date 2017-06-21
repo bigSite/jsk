@@ -4,11 +4,26 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Poiret One', cursive;
 }
 
+h1{
+	font-size: 3em;
+}
+
+h2{
+	font-size: 4em;
+}
+
 body{
 	font-family: 'Lato', sans-serif;
-	font-size: 14px;
-	line-height: 16px;
+	font-size: 12px;
+	line-height: 1.2em;
 }
+
+@media (min-width: 768px) {
+	body{
+		font-size:14px;
+	}
+}
+
 
 .row{
 	margin-top: 30px;
@@ -34,6 +49,10 @@ body{
 
 .center-text{
 	text-align:center;
+}
+
+.right-text{
+	text-align: right;
 }
 
 .after-line:after{
@@ -209,11 +228,11 @@ body{
 }
 
 /*About*/
-
-.about{
-	padding-top: 100px;
+@media (min-width: 768px) {
+	.about{
+		padding-top: 100px;
+	}
 }
-
 /*Listy*/
 
 .no-style{
